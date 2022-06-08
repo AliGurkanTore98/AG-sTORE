@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.register.RegisterFragment"
+    android:background="@color/purple_200"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/register"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_margin="20dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Name"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginBottom="20sp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="E-mail"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginBottom="20sp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginBottom="20sp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etAgainPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="re-Password "
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_marginBottom="20sp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/registerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20sp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

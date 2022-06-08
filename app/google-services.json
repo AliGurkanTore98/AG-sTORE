@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "577067313323",
+    "project_id": "agstore-dbd26",
+    "storage_bucket": "agstore-dbd26.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577067313323:android:2a0fb6b47583c4edf5efee",
+        "android_client_info": {
+          "package_name": "com.codingurkan.ag_store"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "577067313323-eca0lsi68n5915r47gqfcguesf0m1q1m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtcY705yA-386432hiCwudanvK--srG3k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "577067313323-eca0lsi68n5915r47gqfcguesf0m1q1m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
