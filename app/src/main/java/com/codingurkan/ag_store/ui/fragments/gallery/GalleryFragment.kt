@@ -1,12 +1,11 @@
 package com.codingurkan.ag_store.ui.fragments.gallery
 
-import android.icu.text.Transliterator
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.codingurkan.ag_store.R
+import com.codingurkan.ag_store.adapter.GalleryDetailsAdapter
 import com.codingurkan.ag_store.databinding.FragmentGalleryBinding
 import com.google.android.material.tabs.TabLayoutMediator
 

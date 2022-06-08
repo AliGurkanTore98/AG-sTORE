@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
+import com.codingurkan.ag_store.adapter.DashboardAdapter
 import com.codingurkan.ag_store.databinding.FragmentDashboardBinding
 import com.codingurkan.ag_store.util.PageLists
 

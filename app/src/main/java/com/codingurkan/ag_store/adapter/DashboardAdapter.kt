@@ -1,4 +1,4 @@
-package com.codingurkan.ag_store.ui.fragments.dashboard
+package com.codingurkan.ag_store.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -13,7 +13,11 @@ class DashboardAdapter(private val dataItemList : ArrayList<DataItem>) : Recycle
            binding.apply {
                titleTv.text =dataItem.title
                descTv.text = dataItem.desc
-               iconTv.setImageResource(dataItem.photo)
+               dataItem.photo?.let {
+                   iconTv.setImageResource(it) //let - kontrol et
+               }
+             //  iconTv.setImageResource(dataItem.photo)
+               priceTv.text = dataItem.price
            }
        }
    }

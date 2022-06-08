@@ -7,22 +7,22 @@ import com.codingurkan.ag_store.model.DataItem
 object PageLists {
 
     val introSlides = arrayListOf(
-        DataItem(R.drawable.clothing,"Clothes","For Clothing"),
-        DataItem(R.drawable.diet,"Foods","For Foods")
+        DataItem(R.drawable.clothing,"Clothes","For Clothing",null),
+        DataItem(R.drawable.diet,"Foods","For Foods",null)
     )
 
 
     val clothes = arrayListOf(
-        DataItem(R.drawable.jeans,"Jeans",null),
-        DataItem(R.drawable.blazer,"Blazer",null),
-        DataItem(R.drawable.highheels,"Highheels",null),
-        DataItem(R.drawable.jacket,"Jacket",null)
+        DataItem(R.drawable.jeans,"Jeans",null,"30 TL"),
+        DataItem(R.drawable.blazer,"Blazer",null,"30 TL"),
+        DataItem(R.drawable.highheels,"Highheels",null,"30 TL"),
+        DataItem(R.drawable.jacket,"Jacket",null,"30 TL")
     )
 
     val foods = arrayListOf(
-        DataItem(R.drawable.diet,"Diet Food",null),
-        DataItem(R.drawable.hamburger,"Hamburger",null),
-        DataItem(R.drawable.bibimbap,"Bibimbap",null),
-        DataItem(R.drawable.pizza,"Pizza",null)
+        DataItem(R.drawable.diet,"Diet Food",null,"30 TL"),
+        DataItem(R.drawable.hamburger,"Hamburger",null,"30 TL"),
+        DataItem(R.drawable.bibimbap,"Bibimbap",null,"30 TL"),
+        DataItem(R.drawable.pizza,"Pizza",null,"30 TL")
     )
 }

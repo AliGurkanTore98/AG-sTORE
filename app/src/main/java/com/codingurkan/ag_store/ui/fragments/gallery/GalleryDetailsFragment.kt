@@ -5,9 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.codingurkan.ag_store.R
 import com.codingurkan.ag_store.databinding.FragmentGalleryDetailsBinding
-import com.codingurkan.ag_store.ui.fragments.dashboard.DashboardAdapter
+import com.codingurkan.ag_store.adapter.DashboardAdapter
 import com.codingurkan.ag_store.util.PageLists
 
 class GalleryDetailsFragment : Fragment() {
