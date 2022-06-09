@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:layout_gravity="center_vertical">
 
     <androidx.appcompat.widget.AppCompatImageButton
@@ -14,7 +14,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/titleTv"
@@ -26,7 +26,8 @@
         app:layout_constraintEnd_toEndOf="@+id/iconTv"
         app:layout_constraintStart_toStartOf="@+id/iconTv"
         app:layout_constraintTop_toBottomOf="@+id/iconTv"
-        tools:text ="Title"/>
+        tools:text="Title" />
+
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/descTv"
         android:layout_width="wrap_content"
@@ -36,7 +37,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleTv"
-        tools:text ="Description"/>
+        tools:text="Description" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/priceTv"
@@ -47,17 +48,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/descTv"
-        tools:text ="30TL"/>
+        tools:text="30TL" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buyButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/md_blue_A400"
+        android:gravity="center_vertical"
+        android:text="Satın Al"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/priceTv"
-        android:text="Satın Al"
-        android:backgroundTint="@color/md_blue_A400"
-        android:gravity="center_vertical"/>
+        app:layout_constraintTop_toBottomOf="@+id/priceTv" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

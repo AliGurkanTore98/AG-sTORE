@@ -5,7 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.codingurkan.ag_store.adapter.GalleryDetailsAdapter
+import com.codingurkan.ag_store.adapter.GalleryAdapter
 import com.codingurkan.ag_store.databinding.FragmentGalleryBinding
 import com.google.android.material.tabs.TabLayoutMediator
 
@@ -28,7 +28,7 @@ class GalleryFragment : Fragment() {
 
     private fun setAdapter(){
         val galleryViewPager = binding?.galleryVp
-        val adapter = GalleryDetailsAdapter(this@GalleryFragment)
+        val adapter = GalleryAdapter(this@GalleryFragment)
         galleryViewPager?.adapter = adapter
 
         TabLayoutMediator(binding!!.tabLayout,galleryViewPager!!){
