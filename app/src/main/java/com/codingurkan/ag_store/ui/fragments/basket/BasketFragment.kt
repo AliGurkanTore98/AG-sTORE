@@ -1,4 +1,4 @@
-package com.codingurkan.ag_store.ui.fragments.gallery
+package com.codingurkan.ag_store.ui.fragments.basket
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

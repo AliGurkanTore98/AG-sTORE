@@ -56,7 +56,7 @@
         tools:layout="@layout/fragment_gallery" />
     <fragment
         android:id="@+id/galleryDetailsFragment"
-        android:name="com.codingurkan.ag_store.ui.fragments.gallery.GalleryDetailsFragment"
+        android:name="com.codingurkan.ag_store.ui.fragments.gallerydetails.GalleryDetailsFragment"
         android:label="fragment_gallery_details"
         tools:layout="@layout/fragment_gallery_details" />
 </navigation>

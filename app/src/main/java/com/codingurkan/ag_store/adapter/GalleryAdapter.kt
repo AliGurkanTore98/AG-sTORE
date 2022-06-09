@@ -3,7 +3,7 @@ package com.codingurkan.ag_store.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.codingurkan.ag_store.ui.fragments.gallery.GalleryDetailsFragment
+import com.codingurkan.ag_store.ui.fragments.gallerydetails.GalleryDetailsFragment
 
 class GalleryAdapter(fragment : Fragment) : FragmentStateAdapter(fragment) {
     override fun getItemCount(): Int {
