@@ -5,14 +5,21 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.Observer
+import androidx.recyclerview.widget.GridLayoutManager
 import com.codingurkan.ag_store.databinding.FragmentGalleryDetailsBinding
 import com.codingurkan.ag_store.adapter.DashboardAdapter
+import com.codingurkan.ag_store.adapter.GalleryDetailsAdapter
+import com.codingurkan.ag_store.model.DataItem
 import com.codingurkan.ag_store.util.PageLists
 
 class GalleryDetailsFragment : Fragment() {
 
 
     private var binding : FragmentGalleryDetailsBinding? = null
+    private var galleryDetailsAdapter : GalleryDetailsAdapter? = null
+    private val galleryDetailsViewModel : GalleryDetailsViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,6 +40,7 @@ class GalleryDetailsFragment : Fragment() {
                 1 -> viewPager?.adapter = DashboardAdapter(PageLists.foods)
             }
         }
+        setupAdapter()
     }
 
 
@@ -47,5 +55,16 @@ class GalleryDetailsFragment : Fragment() {
         }
     }
 
+    private fun setupAdapter(){
+        galleryDetailsViewModel.galleryDetailsList.observe(viewLifecycleOwner, Observer {
+            galleryDetailsAdapter = GalleryDetailsAdapter(it,object: GalleryDetailsAdapter.ItemClickListener{
+                override fun onClick(dataItem: DataItem) {
+                    galleryDetailsViewModel.addBasket(dataItem)
+                }
+
+            })
+
+        })
+    }
 
 }

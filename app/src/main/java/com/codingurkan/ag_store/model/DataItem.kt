@@ -5,4 +5,6 @@ data class DataItem(
     val title : String? = null,
     val desc : String? = null,
     val price : String? = null
-)
+){
+    var count = 0
+}

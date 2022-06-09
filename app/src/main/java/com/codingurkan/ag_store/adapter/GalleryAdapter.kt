@@ -10,4 +10,5 @@ class GalleryAdapter(fragment : Fragment) : FragmentStateAdapter(fragment) {
         return 2
     }
     override fun createFragment(position: Int) = GalleryDetailsFragment.newInstance(position)
+
 }
