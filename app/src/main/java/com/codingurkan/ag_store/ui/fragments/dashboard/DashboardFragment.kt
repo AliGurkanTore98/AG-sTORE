@@ -34,16 +34,13 @@ class DashboardFragment : Fragment() {
             }
         }
     }
-
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
+    ): View? {
         binding = FragmentDashboardBinding.inflate(layoutInflater)
-        return binding!!.root
+        return binding?.root
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setupViewPager(binding!!)

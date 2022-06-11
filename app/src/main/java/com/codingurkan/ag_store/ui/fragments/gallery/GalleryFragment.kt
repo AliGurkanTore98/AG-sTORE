@@ -18,14 +18,12 @@ class GalleryFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentGalleryBinding.inflate(layoutInflater)
-        return binding!!.root
+        return binding?.root
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setAdapter()
     }
-
     private fun setAdapter(){
         val galleryViewPager = binding?.galleryVp
         val adapter = GalleryAdapter(this@GalleryFragment)
@@ -43,8 +41,4 @@ class GalleryFragment : Fragment() {
             else ->null
         }
     }
-
-
-
-
 }

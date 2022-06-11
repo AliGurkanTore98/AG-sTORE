@@ -20,12 +20,12 @@ class SplashFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
+    ): View? {
         binding = FragmentSplashBinding.inflate(layoutInflater)
         Handler(Looper.myLooper()!!).postDelayed({
             findNavController().navigate(R.id.action_splashFragment_to_loginFragment)
         },3000)
-        return binding!!.root
+        return binding?.root
     }
 
 

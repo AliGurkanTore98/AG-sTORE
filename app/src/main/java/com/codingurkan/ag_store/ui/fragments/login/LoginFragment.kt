@@ -35,18 +35,16 @@ class LoginFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
+    ): View? {
         binding = FragmentLoginBinding.inflate(layoutInflater)
-        return binding!!.root
+        return binding?.root
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         onClickTextView()
         login()
 
     }
-
     private fun onClickTextView(){
         val tvClickMe = binding?.tvRegister
 
@@ -55,7 +53,6 @@ class LoginFragment : Fragment() {
             findNavController().navigate(action)
         }
     }
-
     private fun login(){
             binding?.loginButton?.setOnClickListener {
                 val email = binding?.etEmail?.text.toString()

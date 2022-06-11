@@ -22,11 +22,10 @@ class GalleryDetailsFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
+    ): View? {
        binding = FragmentGalleryDetailsBinding.inflate(layoutInflater)
-        return binding!!.root
+        return binding?.root
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val position = arguments?.getInt(POSITION_ARG)
@@ -38,9 +37,7 @@ class GalleryDetailsFragment : Fragment() {
                 1 -> viewPager?.adapter = DashboardAdapter(PageLists.foods)
             }
         }
-
     }
-
 
     companion object{
         var POSITION_ARG = "position_arg"
@@ -52,20 +49,4 @@ class GalleryDetailsFragment : Fragment() {
             }
         }
     }
-
-    /*
-    private fun setupAdapter(){
-        galleryDetailsViewModel.galleryDetailsList.observe(viewLifecycleOwner, Observer {
-            galleryDetailsAdapter = GalleryDetailsAdapter(it,object: GalleryDetailsAdapter.ItemClickListener{
-                override fun onClick(dataItem: DataItem) {
-                    galleryDetailsViewModel.addBasket(dataItem)
-                }
-
-            })
-
-        })
-    }
-
-     */
-
 }
